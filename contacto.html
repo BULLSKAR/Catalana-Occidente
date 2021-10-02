@@ -36,59 +36,31 @@
         </nav>
         <h2>CONTACTO</h2>
     </div>
-    <div class="contact-form">
-        <div class="formulario">
-            <h1>Formulario de contacto</h1>
-            <h3>Escríbenos y en breve nos pondremos en contacto contigo</h3>
-            <form action="submeter-formulario.php" method="post">
-                <p>
-                    <label for="nombre" class="colocar-nombre">Nombre
-                        <span class="obligatorio">*</span>
-                    </label>
-                    <input type="text" name="introducir-nombre" id="nombre" required="obligatorio"
-                        placeholder="Escribe tu nombre">
-                </p>
+    <div class="row">
+        <div id="templatemo_contact" class="col-md-4 gallery-contact">
+        </div>
+        <div class="col-md-8 templatemo_contactform">
+            <div class="templatemo_contacttitle">CONTACTO
 
-                <p>
-                    <label for="email" class="colocar-email">Email
-                        <span class="obligatorio">*</span>
-                    </label>
-                    <input type="email" name="introducir-email" id="email" required="obligatorio"
-                        placeholder="Escribe tu Email">
-                </p>
+            </div>
+            <div class="templatemo_sub_contacttitle">Si requieres un subtitulo escribelo aquí
 
-                <p>
-                    <label for="telefone" class="colocar-telefono">Teléfono
-                    </label>
-                    <input type="tel" name="introducir-telefono" id="telefono" placeholder="Escribe tu teléfono">
-                </p>
+            </div>
+            <p> Escribe aquí el mensaje que quieres presentar si es necesario.</p>
 
-                <p>
-                    <label for="asunto" class="colocar-asunto">Asunto
-                        <span class="obligatorio">*</span>
-                    </label>
-                    <input type="text" name="introducir-asunto" id="assunto" required="obligatorio"
-                        placeholder="Escribe un asunto">
-                </p>
-
-                <p>
-                    <label for="mensaje" class="colocar-mensaje">Mensaje
-                        <span class="obligatorio">*</span>
-                    </label>
-                    <textarea name="introducir-mensaje" class="texto-mensaje" id="mensaje" required="obligatorio"
-                        placeholder="Deja aquí tu comentario..."></textarea>
-                </p>
-
-                <button type="submit" name="enviar-formulario" id="enviar">
-                    <p>Enviar</p>
-                </button>
-
-                <p class="aviso">
-                    <span class="obligatorio"> * </span>los campos son obligatorios.
-                </p>
+            <form action="enviar.php" method="post">
+                <input type="text" name="name" id="name" class="name" placeholder="NOMBRE">
+                <input type="text" name="mail" id="mail" class="email" placeholder="CORREO">
+                <input type="text" name="phone" id="subject" class="subject" placeholder="TELÉFONO">
+                <textarea name="message" class="message" placeholder="MENSAJE ... " id="message"></textarea>
+                <div class="clear">
+                    
+                </div>
+                <div class="col-md-8">
+                    <button type="submit" class="btn btn-primary">ENVIAR </button>
+                </div>
             </form>
         </div>
-    </div>
 
 </body>
 
